@@ -1,0 +1,26 @@
+{% load static %}
+<header class="header-area">
+    <div class="container">
+        <div class="gx-row d-flex align-items-center justify-content-between">
+            <a href="{% url 'base:index' %}" class="logo">
+                <img src="{% static 'images/logo.svg' %}" alt="Logo">
+            </a>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li class="active"><a href="{% url 'base:index' %}">Home</a></li>
+                    <li><a href="{% url 'base:about' %}">About</a></li>
+                    <li><a href="works.html">Works</a></li>
+                </ul>
+                <!-- <a href="contact.html" class="theme-btn">Let's talk</a> -->
+            </nav>
+
+            <a href="{% url 'base:contact' %}" class="theme-btn">Let's talk</a>
+
+            <div class="show-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,19 @@
+{% load static %}
+<footer class="footer-area">
+    <div class="container">
+        <div class="footer-content text-center">
+            <a href="{% url 'base:index' %}" class="logo">
+                <img src="{% static 'images/logo.svg' %}" alt="Logo">
+            </a>
+            <ul class="footer-menu">
+                <li><a href="{% url 'base:index' %}">Home</a></li>
+                <li><a href="{% url 'base:about' %}">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="{% url 'base:contact' %}">Contact</a></li>
+            </ul>
+            <p class="copyright">
+                &copy; All rights reserved by <span>WordPress River</span>
+            </p>
+        </div>
+    </div>
+</footer>
